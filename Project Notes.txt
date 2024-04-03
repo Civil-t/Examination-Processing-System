@@ -1,0 +1,13 @@
+look for a sample database design of a student - lec relationship
+
+- front end design (figma template) (try to convert to javascript (might waste time))
+
+-use of multiple tables for lecs, students 
+
+- each lec one course (column access)
+
+report (may be a table like in the show data assignment (we need summary of conditions printed out in a table eg where score is > 50))
+
+STUDENT PRIVILEDGES (input data, view data )
+ADMIN PRIVILEDGES (all)
+LEC PRIVILEDGES (input )

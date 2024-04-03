@@ -1,0 +1,46 @@
+<div
+        className="card mb-3"
+        style={{
+          width: "95vw",
+          height: "95vh",
+          margin: "0",
+          padding: "0",
+        }}
+      >
+        <div className="card-body">
+          <h5 className="card-title" style={{ padding: "2%" }}>
+            React University welcomes you!
+          </h5>
+          <p className="card-text" style={{ padding: "10%" }}>
+            n publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface without relying on meaningful content. Lorem ipsum may be
+            used as a placeholder before final copy is available
+          </p>
+          <a
+            href="#"
+            className="btn btn-primary"
+            style={{
+              padding: "5%",
+              margin: "3%",
+              borderRadius: "40%",
+            }}
+          >
+            Student
+          </a>
+          <a
+            href="#"
+            className="btn btn-primary"
+            style={{ padding: "5%", margin: "3%", borderRadius: "40%" }}
+          >
+            Admin
+          </a>
+          <a
+            href="#"
+            className="btn btn-primary"
+            style={{ padding: "5% ", margin: "3%", borderRadius: "40%" }}
+          >
+            Lecturer
+          </a>
+        </div>
+      </div>

@@ -1,0 +1,59 @@
+//import React from 'react'
+//import { Link } from "react-router-dom";
+
+import StudentNav from "./StudentNav";
+import Footer from "./Footer";
+import Front from "./Front";
+
+function Student() {
+  return (
+    <>
+      <StudentNav />
+      
+      <div
+        className="card mb-3"
+        style={{
+          width: "97.5vw",
+          height: "76vh",
+          margin: "-2%",
+          padding: "0",
+        }}
+      >
+        
+        <div className="card-body">
+          <h5
+            className="card-title"
+            style={{ padding: "2%", textAlign: "center" }}
+          >
+            React University welcomes you!
+          </h5>
+
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <a
+              href="https://www.google.com/"
+              className="btn btn-primary"
+              style={{
+                padding: "2%",
+                margin: "2%",
+                borderRadius: "40%",
+              }}
+            >
+              Register Courses
+            </a>
+
+            <a
+              href="#"
+              className="btn btn-primary"
+              style={{ padding: "2% ", margin: "2%", borderRadius: "40%" }}
+            >
+              View Courses
+            </a>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+}
+
+export default Student;
