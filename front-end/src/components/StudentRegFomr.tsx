@@ -71,7 +71,7 @@ function Front() {
     // User does not exist, create a new user
     axios
       .post("http://localhost:3001/registerCourse", finalValues)
-      .then((res) => console.log("Registered Successfully"))
+      .then(() => console.log("Registered Successfully"))
       .catch((err) => console.log(err));
   };
 
