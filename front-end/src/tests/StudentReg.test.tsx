@@ -3,6 +3,8 @@ import { render, fireEvent } from "@testing-library/react";
 import SignUp from "../components/SignUp";
 import { MemoryRouter } from "react-router-dom";
 
+// Testing to see if student sees the registration form successfully
+
 describe("SignUp", () => {
   it("renders without crashing", () => {
     render(
@@ -11,6 +13,8 @@ describe("SignUp", () => {
       </MemoryRouter>
     );
   });
+
+  // Testing to see if the student can only register for 5 courses
 
   it("updates state when five and only five courses are selected", () => {
     const { getByPlaceholderText } = render(
@@ -25,6 +29,8 @@ describe("SignUp", () => {
     expect(nameInput.value).toBe("John");
   });
 
+  // Testing to see if the student can submit the courses to the database
+
   it("updates state when courses are submitted to the database", () => {
     const { getByPlaceholderText } = render(
       <MemoryRouter>
@@ -37,6 +43,8 @@ describe("SignUp", () => {
 
     expect(emailInput.value).toBe("john@example.com");
   });
+
+  // Testing to see if student can view regusterd courses
 
   it("renders registered courses without crashing", () => {
     const { getByPlaceholderText } = render(

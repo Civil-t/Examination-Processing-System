@@ -3,6 +3,8 @@ import { render, fireEvent } from "@testing-library/react";
 import SignUp from "../components/SignUp";
 import { MemoryRouter } from "react-router-dom";
 
+// Test to see if the SignUp component renders without crashing
+
 describe("SignUp", () => {
   it("renders without crashing", () => {
     render(
@@ -11,6 +13,8 @@ describe("SignUp", () => {
       </MemoryRouter>
     );
   });
+
+  // Testing to see if there is name input fields in the form are working
 
   it("updates name state when input changes", () => {
     const { getByPlaceholderText } = render(
@@ -25,7 +29,9 @@ describe("SignUp", () => {
     expect(nameInput.value).toBe("John");
   });
 
-  it("updates email state when input changes", () => {
+  //Testing to see if email input fields in the form posted to the database
+
+  it("updates email state when inputs is posted to database ", () => {
     const { getByPlaceholderText } = render(
       <MemoryRouter>
         <SignUp />
